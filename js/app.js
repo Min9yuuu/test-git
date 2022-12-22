@@ -3,6 +3,9 @@
   tag가 다 준비되면 안의 내용 실행
 }); */
 
+
+
+
 // 문서의 요소(tag)가 다 준비 되면 실행
 // $(값) <= jquery 객체 <= jquery함수 실행
 $(
@@ -29,6 +32,11 @@ $(
     });
     $(".nav li").mouseleave(function(){
       $(this).find(".line").css("width","0%");
+    });
+    $('#header .mo').click(function(){
+      $(".mo_menu").stop().slideToggle("slow");
+      $("#header .mo").css('color','red');
+
     });
   }
 ); //jQuery

@@ -17,8 +17,40 @@
   .nav .line{ width: 0%; position: absolute; height: 2px; background-color: #1634db; left: 0%; bottom: 0; }
   .nav a:hover .line{width: 100%; 
   transition:width 0.8s;}
-  
-/* full_menu */
+
+/*  .mo_menu */
+#header .mo{
+  float: right;
+  padding-right: 20px;
+  line-height: 90px;
+  display: none;
+}
+
+.mo span{
+  font-size: 3rem;
+}
+
+.mo_menu{
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  left: 0;
+  top: 100%;
+  z-index: 99999;
+  display: none;
+}
+
+.mo_menu ul{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 50%;
+  margin: auto;
+}
+
+
+
+/*.pc.full_menu */
 .full_menu{
   position: absolute;
   left: 0;
@@ -43,6 +75,7 @@
 
 .full_menu .full_cover>ul>li{
   width: 20%;
+  max-width: 140px;
   height: 450px;
   border-left: 1px solid #c1c1c1;
   box-sizing: border-box;
@@ -139,3 +172,26 @@
 #main_slide .slide_cover ul li a p{ bottom:0;right: 10%;color: #fff; font-size: 2.4em; width: 400px;}
 
 #main_slide .slide_cover img {height: 100%;}
+
+
+/* mediaQuery */
+@media screen and (max-width: 1330px) {
+  #header{height: auto;}
+  .header_cover{
+      display:flex;
+  }
+  .header_cover .logo{float:none; margin:0 auto; padding:20px 0;}
+  #header .full_menu {
+    display: none;
+  }
+  #header .nav {
+      display: none;
+  }
+  #header .gnb {
+    display: none;
+  }
+  #header .mo{
+      display: block;
+      float:none;
+  }
+}
