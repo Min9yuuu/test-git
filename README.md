@@ -1,51 +1,93 @@
-# 깃 명령어
+# Perpet
 
-### git 명령어는 git으로 시작한다.
+> PWA 앱으로 제작한 풀스택 프로젝트 입니다.
+>
+> > 프론트는 React를 사용하여 제작하였으며 NodeJS의 Express를 활용하여 백엔드를 구현한 풀스택 프로젝트 입니다.
 
-## 맨처음 폴더를 깃으로 관리할때
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
-### git init
+한 두 문단으로 프로젝트 소개 글을 작성합니다.
 
-## 깃 상태확인
+[![텍스트](https://user-images.githubusercontent.com/117795271/228401908-faa0a95c-9876-4daa-b831-062c42d94780.png)](https://perpet.vercel.app/)
 
-### git status
+## [배포 URL](https://perpet.vercel.app/)
 
-## 추적하고싶지 않은 폴더 파일
+## [백엔드 서비스 url](http://naver.com)
 
-### .gitignore
+## [백엔드 깃허브](https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/products)
 
-## 수정 완료된 파일을 stage-area로 올리기
+### 설치 방법
 
-### git add
+OS X & 리눅스:
 
-#### git add \* 전부 stage-area로 올리기
+```sh
+npm install my-crazy-module --save
+```
 
-#### git add . 변경내역이 있는것만
+윈도우:
 
-#### git add 파일명 파일명을 가진 것만
+```sh
+edit autoexec.bat
+```
 
-## git 버전 생성 commit
+## 사용 예제
 
-### git commit -m "커밋메시지"
+스크린 샷과 코드 예제를 통해 사용 방법을 자세히 설명합니다.
 
----
+_더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
 
-## 수정파일 올리기
+## 개발 환경 설정
 
-1. 수정한게 있어야 한다.
-   - 파일에 수정이력이 없으면 workingtree clean 이라는 오류 메시지 출력
+모든 개발 의존성 설치 방법과 자동 테스트 슈트 실행 방법을 운영체제 별로 작성합니다.
 
-### 작업순서
+```sh
+make install
+npm test
+```
 
-1. git add 파일명 (와일드카드)
+## 구현 목록
 
-- git add \* : 모든파일
-- git add . : 수정된 파일
-  - 서버에 올릴때는 파일명으로 많이 한다.
+1. asdas
+2. ㅁㅁㄴㅇㅁ
+   1. ㅁㅁㄴㅁㅇ.
+      1. ㅁㄴㅁㅇㅁㄴ
 
-2. git commit -m "massage"
+- 0.2.1
+  - 수정: 문서 업데이트 (모듈 코드 동일)
+- 0.2.0
+  - 수정: `setDefaultXYZ()` 메서드 제거
+  - 추가: `init()` 메서드 추가
+- 0.1.1
+     \* 버그 수정: `baz()` 메서드 호출 시 부팅되지 않는 현상 (@컨트리뷰터 감사합니다!)
+- 0.1.0
+  - 첫 출시
+  - 수정: `foo()` 메서드 네이밍을 `bar()`로 수정
+- 0.0.1
+  - 작업 진행 중
 
-- 깃 버전생성 및 메세지 붙히기
-  - 깃 커밋시 메시지 내용은 공동작업자가 이해할 수 있도록 수정내용을 구체적으로 작성해야 한다.
+## 정보
 
-1. git push origin main(default)
+이름 – [@트위터 주소](https://twitter.com/dbader_org) – 이메일주소@example.com
+
+XYZ 라이센스를 준수하며 `LICENSE`에서 자세한 정보를 확인할 수 있습니다.
+
+[https://github.com/yourname/github-link](https://github.com/dbader/)
+
+## 기여 방법
+
+1. (<https://github.com/yourname/yourproject/fork>)을 포크합니다.
+2. (`git checkout -b feature/fooBar`) 명령어로 새 브랜치를 만드세요.
+3. (`git commit -am 'Add some fooBar'`) 명령어로 커밋하세요.
+4. (`git push origin feature/fooBar`) 명령어로 브랜치에 푸시하세요.
+5. 풀리퀘스트를 보내주세요.
+
+<!-- Markdown link & img dfn's -->
+
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/yourname/yourproject/wiki
